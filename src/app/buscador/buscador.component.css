@@ -1,0 +1,191 @@
+#custom-search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+
+.vertical-center {
+    margin-top: 26%;
+  
+  }
+  .titulo{
+      font-size: 34px;
+  }
+
+  .busca{
+    display: flex;
+  }
+
+
+
+  .corPainel{
+    background-color: #4b4ca8;
+    color: white;
+    height: 280px;
+}
+.img-circle{
+    border-radius: 121px;
+    margin-top: 20px;
+}
+
+.panel{
+    width: 240px;
+}
+
+
+.nomeBuscado{
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+
+.userStyle{
+   color: #bbbcde;
+   font-size: 16px;
+}
+
+#Footer{
+    background-color: #5253b9;
+    color: white;
+    padding-top: 20px;
+    MIN-HEIGHT: 190px;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+
+#custom-search-input2{
+    padding: 3px;
+    border-bottom: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+    margin-left: 30px;
+    width: 630px;
+}
+
+#custom-search-input2 input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input2 button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+}
+
+#custom-search-input2 button:hover{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input2 .glyphicon-search{
+    font-size: 23px;
+}
+
+.posicaoMenu {
+    display: flex;
+  
+  }
+  .titulo{
+      font-size: 34px;
+  }
+
+  .espacamentoMenu{
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.jumbotron{
+    position: relative;
+    right: 30px;
+    bottom: 10px;
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    box-shadow: 1px 2px 5px 5px #333;
+    /* -webkit-box-shadow: 5px 5px 0 #333; */
+    -moz-box-shadow: 5px 5px 0 #333;
+}
+
+.ContainerRepo{
+    border: 1px solid;
+    box-shadow: 1px 2px 2px 2px #333;
+    padding-left: 20px !important;
+    margin-bottom: 10px;
+}
+.btnStar{
+    background: white;
+    border: 2px solid purple;
+    border-radius: 6px;
+    width: 80px;
+    color: purple;
+}
+
+.btnStar:hover{
+    background: purple;
+    border: 2px solid purple;
+    border-radius: 6px;
+    width: 80px;
+    color: white;
+}
+
+.estrela{
+    width: 30px;
+    padding-bottom: 10px;
+}
+
+.descricaoRepo{
+    width: 480px;
+    text-align:justify;
+    word-wrap: break-word;
+}
+
+.tamanhoIcone{
+    width: 30px;
+}
+
+li{
+    word-wrap: break-word;
+}
+
+.margemDesc{
+    margin-bottom: 20px;
+}
+
+#pesquisaForm{
+
+}

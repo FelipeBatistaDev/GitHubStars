@@ -1,0 +1,134 @@
+<div *ngIf="menuSuperior" class="espacamentoMenu">
+    <div class="posicaoMenu">
+        <div class="mx-auto" style="width: 200px;">
+          <span class="titulo">Github<span style="color: purple;">Stars</span></span>
+          </div>
+
+          <div class="" style="width: 2000px;">
+              <div class="row">
+                <div class="col-md-6">
+                  <div id="custom-search-input2">
+                    <div class="input-group col-md-12">
+                      <input type="text" id="pesquisaForm" (input)="getUser($event)" class="form-control input-lg" placeholder="Github username..." />
+                      <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" (click)="enviaBusca()" type="button">
+                          <i class="fas fa-search"></i>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+</div>
+
+
+<div *ngIf="buscador">
+    <div class="vertical-center">
+        <div class="mx-auto" style="width: 200px;">
+          <span class="titulo">Github<span style="color: purple;">Stars</span></span>
+          </div>
+          <div class="mx-auto" style="width: 2000px;">
+        
+              <div class="row">
+                <div class="col-md-6">
+                  <div id="custom-search-input">
+                    <div class="input-group col-md-12">
+                      <input type="text" (input)="getUser($event)" class="form-control input-lg" placeholder="Github username..." />
+                      <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" (click)="enviaBusca()" type="button">
+                          <i class="fas fa-search"></i>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+      
+      
+</div>
+<div class="busca">
+<div *ngIf="perfil">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <div class="panel panel-default">
+                            <div class="corPainel panel-body text-left">
+                                <div class="row">
+                                  <div class="container">
+      
+                                    <div class="col-md-12 ">
+                                          <div>
+                                            <img class="media-object dp img-circle" [src]="urlFoto" style="width: 180px;height:180px; margin-left: 14px;">
+                                          </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <div class="d-flex justify-content-center">
+                                        <span class="nomeBuscado">{{nome}}</span>
+                                      </div>
+                                      <div class="d-flex justify-content-center">
+                                      <small class="userStyle">{{login}}</small>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div id="Footer" class="panel-footer">
+                                <div class="">
+                                <ul>
+                                  <li class="margemDesc">{{desc}}</li>
+                                  <li><img src="../../assets/location.PNG" class="tamanhoIcone" alt=""><span>{{location}}</span></li>
+                                  <li><img src="../../assets/email.PNG" class="tamanhoIcone" alt=""><span>{{email}}</span></li>
+                                  <li><img src="../../assets/site.PNG" class="tamanhoIcone" alt=""><span>{{urlSite}}</span></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-md-4"></div>
+                </div>
+        </div>
+      </div>
+</div>
+
+<div *ngIf="quadro">
+    <div class="jumbotron">
+        <div class="div" *ngFor="let repositorio of repositoriosEstrela">
+          <div class="container ContainerRepo">
+            <div class="row">
+                <strong>{{repositorio.node.nameWithOwner}}</strong>
+            </div>
+            <div class="row">
+                <div class="descricaoRepo">
+                  <span>{{repositorio.node.description}}</span> 
+                </div>
+                  <button class="btnStar" (click)="star(repositorio.node.nameWithOwner)">Star</button>
+            </div>
+            <div class="row">
+              <i><img src="../../assets/estrela.PNG" class="estrela" alt=""></i><span>{{repositorio.node.watchers.totalCount}}</span>
+            </div>
+
+          </div>
+            
+        </div>
+      </div>
+</div>
+
+
+<div *ngIf="naoAchou">
+    <div class="container">
+       <img src="../../assets/naoAchou.PNG" alt="">
+    </div>
+</div>
+
+
+
+
+
+
+</div>
